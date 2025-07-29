@@ -1,64 +1,24 @@
 using UnityEngine;
 
-public class MoveWithSwipe : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public float forwardSpeed = 5f;
-    public float turnSpeed = 10011f;
 
-    private Vector2 touchStartPos;
-    private bool isSwiping = false;
+    public Rigidbody rb;
+    public float forwardForce = 2000f;
+    public float sideForce = 500f;
 
-    void Update()
+    void FixedUpdate()
     {
-        // Always move forward
-        transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
-        // Handle swipe for left/right turn
-        if (Input.touchCount > 0)
+        if (Input.GetKey("d"))
         {
-            Touch touch = Input.GetTouch(0);
-
-            switch (touch.phase)
-            {
-                case TouchPhase.Began:
-                    touchStartPos = touch.position;
-                    isSwiping = true;
-                    break;
-
-                case TouchPhase.Ended:
-                    if (isSwiping)
-                    {
-                        Vector2 touchEndPos = touch.position;
-                        float deltaX = touchEndPos.x - touchStartPos.x;
-
-                        if (Mathf.Abs(deltaX) > 50f) // adjust swipe sensitivity
-                        {
-                            if (deltaX > 0)
-                            {
-                                // Swipe Right
-                                TurnRight();
-                            }
-                            else
-                            {
-                                // Swipe Left
-                                TurnLeft();
-                            }
-                        }
-
-                        isSwiping = false;
-                    }
-                    break;
-            }
+            rb.AddForce(sideForce * Time.deltaTime, 0, 0);
         }
-    }
 
-    void TurnLeft()
-    {
-        transform.Rotate(Vector3.up * -turnSpeed * Time.deltaTime);
-    }
-
-    void TurnRight()
-    {
-        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime);
+        if (Input.GetKey("a"))
+        {
+            rb.AddForce(-sideForce * Time.deltaTime, 0, 0);
+        }
     }
 }

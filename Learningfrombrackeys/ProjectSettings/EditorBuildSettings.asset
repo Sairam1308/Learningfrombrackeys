@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Leaning.unity
+    guid: 5b093a0099f3b04428e53eee82bedb4f
   m_configObjects: {}

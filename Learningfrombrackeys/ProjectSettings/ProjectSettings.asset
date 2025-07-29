@@ -161,6 +161,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.Learningfrombrackeys
+    Standalone: com.DefaultCompany.Learningfrombrackeys
   buildNumber:
     Standalone: 0
     VisionOS: 0
