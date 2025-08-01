@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,12 +152,12 @@ TextureImporter:
       name: StartMenu_0
       rect:
         serializedVersion: 2
-        x: 1407
-        y: 674
-        width: 618
-        height: 221
+        x: 13
+        y: 0
+        width: 1349
+        height: 1341
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +173,12 @@ TextureImporter:
       name: StartMenu_1
       rect:
         serializedVersion: 2
-        x: 1409
-        y: 433
-        width: 620
-        height: 200
+        x: 1417
+        y: 1076
+        width: 130
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,10 +194,10 @@ TextureImporter:
       name: StartMenu_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1380
-        height: 1341
+        x: 1426
+        y: 683
+        width: 587
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,6 +207,27 @@ TextureImporter:
       bones: []
       spriteID: 2d0bc23da9736104e9e7646afdd186df
       internalID: 363519689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartMenu_3
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 433
+        width: 587
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76f29538718062438d26dec5d59ac94
+      internalID: 1414775939
       vertices: []
       indices: 
       edges: []
@@ -212,7 +246,7 @@ TextureImporter:
       StartMenu_0: -1795066998
       StartMenu_1: 1788334975
       StartMenu_2: 363519689
-      playButton: -2071084160
+      StartMenu_3: 1414775939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

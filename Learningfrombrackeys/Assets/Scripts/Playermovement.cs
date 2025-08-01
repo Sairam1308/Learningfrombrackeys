@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 2000f;
     public float sideForce = 500f;
+    //public Transform player;
+
 
     void FixedUpdate()
     {
@@ -14,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("d"))
         {
             rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            //Debug.Log(player.position);
         }
 
         if (Input.GetKey("a"))
