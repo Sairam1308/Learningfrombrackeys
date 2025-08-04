@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded=false;
     public float restartDelay;
     public GameObject levelCompleteUI;
+    public GameObject pauseMenuUI;
+
     public void LevelComplete()
     {
         levelCompleteUI.SetActive(true);
@@ -25,8 +27,12 @@ public class GameManager : MonoBehaviour
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-
     }
+
+    public void PauseGame()
+    {
+                pauseMenuUI.SetActive(true);
+    }
+
 
 }
