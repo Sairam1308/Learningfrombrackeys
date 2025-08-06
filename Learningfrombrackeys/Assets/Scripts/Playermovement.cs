@@ -7,11 +7,15 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sideForce = 500f;
     //public Transform player;
-
+    
 
     void FixedUpdate()
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+      
+        // if (pauseMenuUiEnabled = false)
+        // {
+        // }
 
         if (Input.GetKey("d"))
         {
@@ -26,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
         if (rb.position.y <= 0)
         {
             FindObjectOfType<GameManager>().EndGame();
+            
+         
         }
 
     }

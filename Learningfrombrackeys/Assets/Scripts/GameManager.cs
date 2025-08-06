@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public float restartDelay;
     public GameObject levelCompleteUI;
     public GameObject pauseMenuUI;
+    public bool pauseMenuUiEnabled = false;
 
     public void LevelComplete()
     {
@@ -31,7 +32,11 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-                pauseMenuUI.SetActive(true);
+        if (pauseMenuUiEnabled == false)
+        {
+            pauseMenuUI.SetActive(true);
+            pauseMenuUiEnabled = true;
+        }
     }
 
 
