@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
         if(gameHasEnded==false)
         {
             gameHasEnded= true;
-            Debug.Log("Game Over");
-            Invoke("Restart", restartDelay);
-            
+            //Debug.Log("Game Over");
+            FindObjectOfType<PlayerMovement>().enabled = true;
+            Invoke("Restart", restartDelay);       
         }
     }
     void Restart()
@@ -35,8 +35,17 @@ public class GameManager : MonoBehaviour
         if (pauseMenuUiEnabled == false)
         {
             pauseMenuUI.SetActive(true);
+            FindObjectOfType<PlayerMovement>().enabled = false;
             pauseMenuUiEnabled = true;
         }
+    }
+    public void ResumeGame()
+    {
+        
+            pauseMenuUI.SetActive(false);
+            FindObjectOfType<PlayerMovement>().enabled = true;
+            
+        
     }
 
 

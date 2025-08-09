@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sideForce = 500f;
     //public Transform player;
-    
+    public GameObject pauseMenuUI;
+
+
 
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+            rb.AddForce(0, 0, forwardForce * Time.deltaTime);        
       
         // if (pauseMenuUiEnabled = false)
         // {
@@ -30,9 +33,19 @@ public class PlayerMovement : MonoBehaviour
         if (rb.position.y <= 0)
         {
             FindObjectOfType<GameManager>().EndGame();
-            
-         
         }
 
     }
+    public void MoveRightButton()
+    {
+        rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+    }
+    public void MoveLeftButton()
+    {
+        rb.AddForce(-sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+    }
+
+
+
+
 }
