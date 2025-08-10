@@ -8,6 +8,10 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(levelName);
     }
+    public void ReplayLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
 
 

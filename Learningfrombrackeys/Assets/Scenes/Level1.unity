@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.6509804, g: 0.6745098, b: 0.7137255, a: 1}
+  m_FogColor: {r: 0.24313727, g: 0.2509804, b: 0.25882354, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -25,11 +25,11 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.6509804, g: 0.6745098, b: 0.7137255, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
-  m_FlareFadeSpeed: 3
+  m_FlareFadeSpeed: 4
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
@@ -1251,7 +1251,6 @@ GameObject:
   - component: {fileID: 665453056}
   - component: {fileID: 665453055}
   - component: {fileID: 665453058}
-  - component: {fileID: 665453059}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1386,21 +1385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 0
-  levelCompleteUI: {fileID: 0}
+  levelCompleteUI: {fileID: 1321817678}
   pauseMenuUI: {fileID: 1601372529}
   pauseMenuUiEnabled: 0
---- !u!114 &665453059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665453053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e55adaca299a4945a7e36741bfc757d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &674859108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,8 +2071,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 957986954}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 5
+        m_MethodName: ReplayLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2250,7 +2237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 731704811}
-  offset: {x: 0, y: 1, z: -5}
+  offset: {x: 0, y: 2, z: -6}
 --- !u!1 &1114884811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,7 +2560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1601372530
 RectTransform:
   m_ObjectHideFlags: 0
