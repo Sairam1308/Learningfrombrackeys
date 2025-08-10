@@ -15,8 +15,8 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.24313727, g: 0.2509804, b: 0.25882354, a: 1}
-  m_FogMode: 3
+  m_FogColor: {r: 0.6509804, g: 0.6745098, b: 0.7137255, a: 1}
+  m_FogMode: 2
   m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.6509804, g: 0.6745098, b: 0.7137255, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.447
   m_FlareStrength: 1
   m_FlareFadeSpeed: 4
   m_HaloTexture: {fileID: 0}
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6e2bf7fcc5062da4587b67da1d6de396, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1275,8 +1275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: 248}
-  m_SizeDelta: {x: 47.1635, y: 43.6496}
+  m_AnchoredPosition: {x: 90.6619, y: 251.52727}
+  m_SizeDelta: {x: 34.4873, y: 36.5951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665453055
 MonoBehaviour:
@@ -2733,7 +2733,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 114}
-  m_LocalScale: {x: 15, y: 5, z: 5}
+  m_LocalScale: {x: 16, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
