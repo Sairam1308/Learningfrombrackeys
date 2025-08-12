@@ -44,9 +44,6 @@ public class GameManager : MonoBehaviour
         
             pauseMenuUI.SetActive(false);
             FindObjectOfType<PlayerMovement>().enabled = true;
-            
         
     }
-
-
 }
