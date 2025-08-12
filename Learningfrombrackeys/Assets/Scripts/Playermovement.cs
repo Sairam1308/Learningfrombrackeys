@@ -7,23 +7,25 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 2000f;
     public float sideForce = 500f;
-    //public Transform player;
     public GameObject pauseMenuUI;
+    //public float minX;
+    //public float maxX;
 
 
 
     void FixedUpdate()
     {
+        //Vector3 playerPosition = transform.position;
+        //playerPosition.x = Mathf.Clamp(playerPosition.x, minX, maxX);
+        //transform.position = playerPosition;
             rb.AddForce(0, 0, forwardForce * Time.deltaTime);        
       
-        // if (pauseMenuUiEnabled = false)
-        // {
-        // }
+       
 
         if (Input.GetKey("d"))
         {
             rb.AddForce(sideForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-            //Debug.Log(player.position);
+          
         }
 
         if (Input.GetKey("a"))
