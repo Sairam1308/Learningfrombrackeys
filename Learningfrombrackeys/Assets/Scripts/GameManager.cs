@@ -9,10 +9,14 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenuUI;
     public bool pauseMenuUiEnabled = false;
 
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+    }
+
     public void LevelComplete()
     {
         levelCompleteUI.SetActive(true);
-        Debug.Log("Level Complete");
     }
  
     public void EndGame()

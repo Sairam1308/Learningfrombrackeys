@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9666042, y: 6.7718077}
-  m_SizeDelta: {x: 247.176, y: 371.7126}
+  m_AnchoredPosition: {x: 0.00032139, y: -1.8632}
+  m_SizeDelta: {x: 500.52, y: 78.5665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251234169
 MonoBehaviour:
@@ -780,6 +784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -836,6 +844,10 @@ PrefabInstance:
     - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
       propertyPath: m_Name
       value: Obstacle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -920,6 +932,101 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454713972}
+  m_CullTransparentMesh: 1
+--- !u!1 &536239320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536239321}
+  - component: {fileID: 536239324}
+  - component: {fileID: 536239323}
+  - component: {fileID: 536239322}
+  m_Layer: 5
+  m_Name: FinalScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &536239321
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536239320}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.1999999, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1321817679}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0017404, y: 157}
+  m_SizeDelta: {x: 337.91, y: 65.3522}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &536239322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536239320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95a792ef15ff5849b116b86e98f0ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 731704811}
+  scoreText: {fileID: 1820948802}
+  finaleScoreText: {fileID: 536239323}
+--- !u!114 &536239323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536239320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 87
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score: '
+--- !u!222 &536239324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536239320}
   m_CullTransparentMesh: 1
 --- !u!1 &538768541
 GameObject:
@@ -1233,6 +1340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1273,10 +1384,10 @@ RectTransform:
   - {fileID: 1397962001}
   m_Father: {fileID: 95029877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90.6619, y: 251.52727}
-  m_SizeDelta: {x: 34.4873, y: 36.5951}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -48.2, y: -60.1}
+  m_SizeDelta: {x: 34.487305, y: 36.595093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665453055
 MonoBehaviour:
@@ -1777,6 +1888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1979,6 +2094,10 @@ PrefabInstance:
     - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
       propertyPath: m_Name
       value: Obstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2337,6 +2456,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 536239321}
   - {fileID: 1707716329}
   - {fileID: 251234168}
   - {fileID: 957986950}
@@ -2537,6 +2657,10 @@ PrefabInstance:
     - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
       propertyPath: m_Name
       value: Obstacle (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2851,8 +2975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 62}
-  m_SizeDelta: {x: 241.089, y: 355.5153}
+  m_AnchoredPosition: {x: -0.000004782, y: 72}
+  m_SizeDelta: {x: 500.52, y: 82.186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707716330
 MonoBehaviour:
@@ -3034,10 +3158,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 95029877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00016975, y: 130.456}
-  m_SizeDelta: {x: 405.49, y: 166.0338}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -1.1659, y: -152}
+  m_SizeDelta: {x: 171.6471, y: 83.3533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1820948802
 MonoBehaviour:
@@ -3095,6 +3219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 731704811}
   scoreText: {fileID: 1820948802}
+  finaleScoreText: {fileID: 536239323}
 --- !u!1001 &1850004943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3146,6 +3271,10 @@ PrefabInstance:
     - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
       propertyPath: m_Name
       value: Obstacle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3282,6 +3411,10 @@ PrefabInstance:
     - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
       propertyPath: m_Name
       value: Obstacle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6793072578475049289, guid: 8b74fd0e1898a8a4e85cbb6ee5328883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
