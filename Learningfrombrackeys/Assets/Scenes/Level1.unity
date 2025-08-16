@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 77794468}
   m_Layer: 5
   m_Name: LeftButton
-  m_TagString: Untagged
+  m_TagString: NavigationButtons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,7 +436,6 @@ GameObject:
   - component: {fileID: 211288738}
   - component: {fileID: 211288737}
   - component: {fileID: 211288736}
-  - component: {fileID: 211288739}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -508,7 +507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 211288739}
+      - m_Target: {fileID: 538768543}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -558,22 +557,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211288733}
   m_CullTransparentMesh: 1
---- !u!114 &211288739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211288733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdcf4def389e76247b1a040f45703efb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartDelay: 0
-  levelCompleteUI: {fileID: 0}
-  pauseMenuUI: {fileID: 1601372529}
-  pauseMenuUiEnabled: 0
 --- !u!1 &214610187
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00032139, y: -1.8632}
+  m_AnchoredPosition: {x: 0.00032138824, y: 158.1368}
   m_SizeDelta: {x: 500.52, y: 78.5665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251234169
@@ -968,8 +951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0017404, y: 157}
-  m_SizeDelta: {x: 337.91, y: 65.3522}
+  m_AnchoredPosition: {x: 0.0017448, y: 75}
+  m_SizeDelta: {x: 337.91, y: 61.4279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536239322
 MonoBehaviour:
@@ -1007,8 +990,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: f79ba333cc6c4ef45be76d2227b4aaa6, type: 3}
+    m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1075,7 +1058,6 @@ MonoBehaviour:
   restartDelay: 1
   levelCompleteUI: {fileID: 1321817678}
   pauseMenuUI: {fileID: 1601372529}
-  pauseMenuUiEnabled: 0
 --- !u!1 &605576742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1151,7 @@ GameObject:
   - component: {fileID: 610710597}
   m_Layer: 5
   m_Name: RightButton
-  m_TagString: Untagged
+  m_TagString: NavigationButtons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1361,7 +1343,6 @@ GameObject:
   - component: {fileID: 665453057}
   - component: {fileID: 665453056}
   - component: {fileID: 665453055}
-  - component: {fileID: 665453058}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1386,7 +1367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -48.2, y: -60.1}
+  m_AnchoredPosition: {x: -54.379, y: -67}
   m_SizeDelta: {x: 34.487305, y: 36.595093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665453055
@@ -1433,7 +1414,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 665453058}
+      - m_Target: {fileID: 538768543}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -1483,22 +1464,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665453053}
   m_CullTransparentMesh: 1
---- !u!114 &665453058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665453053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdcf4def389e76247b1a040f45703efb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartDelay: 0
-  levelCompleteUI: {fileID: 1321817678}
-  pauseMenuUI: {fileID: 1601372529}
-  pauseMenuUiEnabled: 0
 --- !u!1 &674859108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1787,6 @@ MonoBehaviour:
   rb: {fileID: 731704812}
   forwardForce: 1999
   sideForce: 99
-  pauseMenuUI: {fileID: 1601372529}
 --- !u!114 &731704814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,10 +2427,10 @@ RectTransform:
   - {fileID: 749105354}
   m_Father: {fileID: 95029877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 338, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321817680
 MonoBehaviour:
@@ -2975,7 +2939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000004782, y: 72}
+  m_AnchoredPosition: {x: -0, y: 232}
   m_SizeDelta: {x: 500.52, y: 82.186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707716330

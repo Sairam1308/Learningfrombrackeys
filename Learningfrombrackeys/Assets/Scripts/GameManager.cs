@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,12 +8,8 @@ public class GameManager : MonoBehaviour
     public float restartDelay;
     public GameObject levelCompleteUI;
     public GameObject pauseMenuUI;
-    public bool pauseMenuUiEnabled = false;
+    bool pauseMenuUiEnabled = false;
 
-    void Start()
-    {
-        pauseMenuUI.SetActive(false);
-    }
 
     public void LevelComplete()
     {
@@ -38,16 +35,24 @@ public class GameManager : MonoBehaviour
     {
         if (pauseMenuUiEnabled == false)
         {
+            pauseMenuUiEnabled = true;
             pauseMenuUI.SetActive(true);
             FindObjectOfType<PlayerMovement>().enabled = false;
-            pauseMenuUiEnabled = true;
+            GameObject.Find("LeftButton").GetComponent<Button>().interactable = false;
+            GameObject.Find("RightButton").GetComponent<Button>().interactable = false;
+
         }
     }
     public void ResumeGame()
     {
-        
+        if (pauseMenuUiEnabled == true)
+        {
+
             pauseMenuUI.SetActive(false);
             FindObjectOfType<PlayerMovement>().enabled = true;
-        
+            pauseMenuUiEnabled = false;
+            GameObject.Find("LeftButton").GetComponent<Button>().interactable = true;
+            GameObject.Find("RightButton").GetComponent<Button>().interactable = true;
+        }
     }
 }

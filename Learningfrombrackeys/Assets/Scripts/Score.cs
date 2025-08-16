@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
         myScore = player.position.z.ToString("0");
 
         scoreText.text = myScore;
-        finaleScoreText.text = scoreText.text;
+        finaleScoreText.text = "Score:"+scoreText.text;
 
     }
 }
