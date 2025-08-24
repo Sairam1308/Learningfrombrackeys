@@ -11,6 +11,5 @@ public class EndTrigger : MonoBehaviour
     void TestDelay()
     {
         FindObjectOfType<GameManager>().LevelComplete();
-
     }
 }

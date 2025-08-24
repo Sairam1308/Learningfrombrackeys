@@ -9,11 +9,16 @@ public class GameManager : MonoBehaviour
     public GameObject levelCompleteUI;
     public GameObject pauseMenuUI;
     bool pauseMenuUiEnabled = false;
-
+    public void Start()
+    {
+        levelCompleteUI.SetActive(false);
+        pauseMenuUI.SetActive(false);
+    }
 
     public void LevelComplete()
     {
         levelCompleteUI.SetActive(true);
+        Destroy(pauseMenuUI);
     }
  
     public void EndGame()
@@ -21,7 +26,7 @@ public class GameManager : MonoBehaviour
         if(gameHasEnded==false)
         {
             gameHasEnded= true;
-            //Debug.Log("Game Over");
+            Debug.Log("Game Over");
             FindObjectOfType<PlayerMovement>().enabled = true;
             Invoke("Restart", restartDelay);       
         }
@@ -54,5 +59,27 @@ public class GameManager : MonoBehaviour
             GameObject.Find("LeftButton").GetComponent<Button>().interactable = true;
             GameObject.Find("RightButton").GetComponent<Button>().interactable = true;
         }
+    }
+    void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus)
+        {
+            PauseGame();
+        }
+        //else
+        //{
+        //    ResumeGame(); //i dont want this manually i want to resume from resume panel
+        //}
+    }
+    void OnApplicationFocus(bool hasFocus)
+    {
+        if (!hasFocus)
+        {
+            PauseGame();
+        }
+        //else
+        //{
+        //    ResumeGame();//i dont want this manually i want to resume from resume panel
+        //}
     }
 }
