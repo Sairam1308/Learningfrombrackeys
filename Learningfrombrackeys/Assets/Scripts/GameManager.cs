@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         if(gameHasEnded==false)
         {
             gameHasEnded= true;
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
             FindObjectOfType<PlayerMovement>().enabled = true;
             Invoke("Restart", restartDelay);       
         }
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         }
         //else
         //{
-        //    ResumeGame(); //i dont want this manually i want to resume from resume panel
+        //    ResumeGame(); //i dont want this, manually i want to resume from resume panel
         //}
     }
     void OnApplicationFocus(bool hasFocus)
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
         }
         //else
         //{
-        //    ResumeGame();//i dont want this manually i want to resume from resume panel
+        //    ResumeGame();//i dont want this, manually i want to resume from resume panel
         //}
     }
 }
