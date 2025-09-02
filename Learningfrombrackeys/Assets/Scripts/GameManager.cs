@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         levelCompleteUI.SetActive(true);
         Destroy(pauseMenuUI);
+        GameObject.Find("Player").GetComponent<AudioSource>().Stop();
     }
  
     public void EndGame()

@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sideForce = 500f;
     string playerDirection;
-    public float minX=-5;
-    public float maxX=5;
+    public float minX=-4;
+    public float maxX=4;
 
     void FixedUpdate()
     {
