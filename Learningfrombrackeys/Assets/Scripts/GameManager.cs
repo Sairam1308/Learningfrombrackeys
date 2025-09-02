@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
         if (pauseMenuUiEnabled == false)
         {
+            Time.timeScale = 0f;
             pauseMenuUiEnabled = true;
             pauseMenuUI.SetActive(true);
             FindObjectOfType<PlayerMovement>().enabled = false;
@@ -53,7 +54,7 @@ public class GameManager : MonoBehaviour
     {
         if (pauseMenuUiEnabled == true)
         {
-
+            Time.timeScale = 1f;
             pauseMenuUI.SetActive(false);
             FindObjectOfType<PlayerMovement>().enabled = true;
             pauseMenuUiEnabled = false;
